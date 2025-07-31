@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menfesh As-Sab'ah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #232526, #414345);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px 25px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #FFD700;
+    }
+
+    .tagline {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      resize: none;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: #ddd;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #FFD700;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffc300;
+    }
+
+    .footer {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 20px; }
+      .container { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Selamat Datang di apk Menfesh As-Sab'ah 💌</h1>
+    <p class="tagline">Sampaikan pesan anonim mu untuk pesantren ini atau seseorang yang kamu sukai 🤍</p>
+
+    <form action="https://formspree.io/f/xyzppjlw" method="POST">
+      <label for="pesan">Pesanmu</label>
+      <textarea name="pesan" id="pesan" rows="5" placeholder="Tulis pesan rahasia di sini..." required></textarea>
+
+      <label for="inisial">Inisial Namamu(Opsional)</label>
+      <input type="text" name="inisial" id="inisial" placeholder="Contoh: stnbla, ftmazra atau 'yang mengagumimu' ">
+
+      <p class="note">📢 Pesan ini akan dibagikan ke publik secara anonim.
+Kirimkan pesanmu untuk pesantren ini atau untuk seseorang yang kamu sukai 💌
+Tenang, identitasmu tetap rahasia!</p>
+      <p class="note">🚫 Kami tidak akan memproses pesan yang mengandung unsur kebencian, fitnah, atau SARA.</p>
+      <p class="note">😁👍🏻 Ini hanya untuk seru-seruan atau media refleksi santri As-Sab'ah.</p>
+
+      <button type="submit">Kirim Sekarang!</button>
+    </form>
+
+    <div class="footer">
+      © ppfhas_sab'ah <br>
+      apk created by mfthlum
+    </div>
+  </div>
+
+</body>
+</html>
